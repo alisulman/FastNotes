@@ -1,9 +1,10 @@
 import React from 'react'
+import NoteLayout from '../layout/note_layout'
 
 const Home = () => {
   return (
-    <div className='text-3xl absolute top-1/4'>
-      Home Page
+    <div>
+      <NoteLayout />
     </div>
   )
 }

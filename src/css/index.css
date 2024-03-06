@@ -2,11 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #001B22;
     overflow: hidden;
+
 }
 
-.active{
+.active {
     color: #ffffff
+}
+
+.bg-colorOne {
+    background-color: #002C38;
+}
+
+.bg-colorTwo {
+    background-color: #00e1ff;
+}
+.bg-colorThree {
+    background-color: #006977;
+}
+
+.text-colorOne {
+    color: #005F77;
+}
+
+.border-colorOne {
+    border-color: #005F77;
+}
+
+
+/* inputs  */
+.inputbox1 input:valid~span,
+.inputbox2 textarea:valid~span {
+    color: #00e1ff;
+    transform: translateX(13px) translateY(-4px);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    padding: 0 5px;
+    background-color: #002C38;
+    border-radius: 3px;
+}
+.inputbox1 input:valid,
+.inputbox1 input:focus,
+.inputbox2 textarea:valid,
+.inputbox2 textarea:focus{
+    border: 2px solid#00e1ff;
 }
