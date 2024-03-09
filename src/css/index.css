@@ -4,8 +4,7 @@
 
 body {
     background-color: #001B22;
-    overflow: hidden;
-
+    overflow-x: hidden;
 }
 
 .active {
@@ -26,7 +25,16 @@ body {
 .text-colorOne {
     color: #005F77;
 }
+.text-colorTwo {
+    color: #00e1ff;
+}
 
+.bg-colorFour {
+    background-color: #005F77;
+}
+.bg-colorFive {
+    background-color: #014657;
+}
 .border-colorOne {
     border-color: #005F77;
 }
@@ -34,7 +42,9 @@ body {
 
 /* inputs  */
 .inputbox1 input:valid~span,
-.inputbox2 textarea:valid~span {
+.inputbox1 input:focus~span,
+.inputbox2 textarea:valid~span,
+.inputbox2 textarea:focus~span {
     color: #00e1ff;
     transform: translateX(13px) translateY(-4px);
     font-size: 13px;

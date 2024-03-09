@@ -18,7 +18,7 @@ export function StickyNavbar() {
                 <NavLink to="/" className="flex items-center text-gray-400">Home</NavLink>
             </Typography>
             <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-                <NavLink to="/account" className="flex items-center text-gray-400">Account</NavLink>
+                <NavLink to="/allnotes" className="flex items-center text-gray-400">Notes</NavLink>
             </Typography>
             <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
                 <NavLink to="/block" className="flex items-center text-gray-400">Blocks</NavLink>

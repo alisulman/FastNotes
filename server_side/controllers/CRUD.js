@@ -10,9 +10,24 @@ export const add = async (req, res) => {
             data: newNote
         })
     } catch (error) {
-        console.log(error)
         res.json({
-            error: error instanceof Error ? error.message : true,
+            error: true,
+            message: `Something went wrong`
+        })
+    }
+}
+
+export const fetch = async (req, res) => {
+    try {
+        let notes = await Note.find()
+        res.json({
+            error: false,
+            total : notes.length,
+            data: notes
+        })
+    } catch (error) {
+        res.json({
+            error: error,
             message: `Something went wrong`
         })
     }

@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import morgan from 'morgan'
+import cors from 'cors'
 import routes from './routers/route.js'
 import dbConfig from './config/config.js'
 
@@ -11,6 +12,7 @@ const port = process.env.PORT || 3200
 
 app.use(morgan("dev"))
 app.use(express.json())
+app.use(cors())
 app.use('/api', routes)
 
 app.listen(port, () => {
